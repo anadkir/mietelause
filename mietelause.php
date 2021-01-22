@@ -1,3 +1,8 @@
+<?php
+    $text = '"On ihanaa olla tekemättä mitään"';
+    $name = 'Anastasiia Pullinen';
+    $date = date("d.m.Y");
+?>
 <!DOCTYPE html>
 <html lang="fi">
     <head>
@@ -77,14 +82,14 @@
         <div class="card">
             <div class="card__front">
                 <div class="card__wrapper">
-                    <p class="quote"><?php echo '"On ihanaa olla tekemättä mitään"'; ?></p>
+                    <p class="quote"><?= $text ?></p>
                 </div>
             </div>
             <div class="card__back">
                 <div class="card__wrapper">
                     <p class="card__text">
-                        <span class="name"><?php echo 'Anastasiia Pullinen'; ?></span>
-                        <span class="date"><?php echo date("d.m.Y"); ?></span>
+                        <span class="name"><?= $name ?></span>
+                        <span class="date"><?= $date ?></span>
                     </p>
                 </div>
             </div>
